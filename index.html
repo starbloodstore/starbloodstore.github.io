@@ -117,7 +117,7 @@ https://templatemo.com/tm-567-nomad-force
                                 <p class="text-secondary-white-color" data-aos="fade-up">Kami menyediakan metode pembayaran melalui Shopeepay, Gopay, Dana</p>
 
                                 <div class="col-lg-6 col-12 mt-3 mb-lg-5">
-                            <p class="me-4" data-aos="fade-up" data-aos-delay="300">Order <a rel="nofollow" href="http://wa.me/6281313994677" target="_blank">disini </a></p>
+                            <p class="me-4" data-aos="fade-up" data-aos-delay="300">Jumlah order / paket <a rel="nofollow" href="http://wa.me/6281313994677" target="_blank">disini </a></p>
                         </div>
 
                                 
@@ -165,7 +165,7 @@ https://templatemo.com/tm-567-nomad-force
                        <p>•1 Tahun = 30.000</p>
                            
                                     </h5>
-                                    <span class="text-muted"><a href="http://wa.me/6281313994666" target="_blank">Order Disini</a></span>
+                                    <span class="text-muted"><a href="http://wa.me/6281313994677" target="_blank">Jumlah order / paket Disini</a></span>
                                 </div>
                             </div> 
                         </div>
@@ -190,7 +190,7 @@ https://templatemo.com/tm-567-nomad-force
 	display:block;
 	width:90px;
 	height:90px;
-	border-radius:90px;
+	bJumlah order / paket-radius:90px;
 	text-indent:-9999px;
 	background:#fff url(https://lh3.googleusercontent.com/-evFtor-f_w8/W4pfajfP17I/AAAAAAAAE9E/f7H52hrT5UoY4ZqdkxSGh2ZftYrH8fiDwCLcBGAs/s300/Whatsapp.png) no-repeat center center;
 	background-size:50% auto;
@@ -211,7 +211,7 @@ https://templatemo.com/tm-567-nomad-force
 	max-width:-webkit-fill-available;
 	font-family:Helvetica, sans-serif;
 	font-size:90%;
-	border-radius:4px;
+	bJumlah order / paket-radius:4px;
 	visibility:hidden;
 	opacity:0;
 	transition:.3s;
@@ -244,18 +244,18 @@ https://templatemo.com/tm-567-nomad-force
 #whatsapp input,
 #whatsapp textarea {
 	display:block;
-	border:1px solid #21811a;
+	bJumlah order / paket:1px solid #21811a;
 	box-shadow:inset 0 2px 5px #ffffff00;
 	width:100%;
 	padding:15px;
-	border-radius:2px;
+	bJumlah order / paket-radius:2px;
 }
 #whatsapp input.nama {
 	text-transform:capitalize;
 }
 #whatsapp input:focus,
 #whatsapp textarea:focus {
-	border:1px solid #ddd;
+	bJumlah order / paket:1px solid #ddd;
 }
 #whatsapp textarea {
 	min-height:80px;
@@ -269,7 +269,7 @@ https://templatemo.com/tm-567-nomad-force
 	text-align:center;
 	background:#25D366;
 	color:white;
-	border-radius:2px;
+	bJumlah order / paket-radius:2px;
 }
 #whatsapp a:hover {
 	background:#20b558;
@@ -278,21 +278,18 @@ https://templatemo.com/tm-567-nomad-force
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <div id="whatsapp" class="toggle">
 
-<input class="tujuan" type="hidden" value="081234567890" /> <!-- No. WhatsApp -->
+<input class="tujuan" type="hidden" value="081313994677" /> <!-- No. WhatsApp -->
 
-<label>Nama :
-<input class="nama" type="text" placeholder="Tulis Nama Lengkap." />
-</label>
-<label>Alamat :
-<input class="alamat" type="alamat" placeholder="contoh : Jl.Tamansari I RT 002/008 No.1 Kel.Pekayon Kec.Ps Rebo Jak Tim." />
-</label>
-<label>Nomor telepon :
-<input class="nomor" type="nomor" placeholder="contoh : 082225204112.." />
-</label>
 <label>Jumlah order / paket :
-<textarea class="pesan" placeholder="contoh: 1 paket mainan pintar ebook.."></textarea>
+<input class="Jumlah order / paket" type="Jumlah order / paket" placeholder="contoh : YouTube premium 1 Tahun." />
 </label>
-<a class="submit">> KIRIM WHATSAPP</a>
+<label>Email Yang mau di upgrade prem :
+<input class="Email" type="Email" placeholder="contoh : google@gmail.com." />
+</label>
+<label>Metode Pembayaran :
+<textarea class="Metode" placeholder="contoh: Gopay/shopeepay/dana.."></textarea>
+</label>
+<a class="submit">> Order Di WhatsApp</a>
 
 </div>
 
@@ -314,23 +311,23 @@ function WhatsApp() {
 		alert('Silahkan tulis ' + ph);
 		$('#whatsapp .nama').focus();
 		return false;
-	} else if ($('#whatsapp .alamat').val() == '') { // Cek alamat
-		ph = $('#whatsapp .alamat').attr('placeholder');
+	} else if ($('#whatsapp .Jumlah order / paket').val() == '') { // Cek Jumlah order / paket
+		ph = $('#whatsapp .Jumlah order / paket').attr('placeholder');
 		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .alamat').focus();
+		$('#whatsapp .Jumlah order / paket').focus();
 		return false;
-	} else if ($('#whatsapp .nomor').val() == '') { // Cek Nomor
-		ph = $('#whatsapp .nomor').attr('placeholder');
+	} else if ($('#whatsapp .Email').val() == '') { // Cek Email
+		ph = $('#whatsapp .Email').attr('placeholder');
 		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .nomor').focus();
+		$('#whatsapp .Email').focus();
 		return false;
-	} else if ($('#whatsapp .pesan').val() == '') { // Cek Pesan
-		ph = $('#whatsapp .pesan').attr('placeholder');
+	} else if ($('#whatsapp .Metode').val() == '') { // Cek Metode
+		ph = $('#whatsapp .Metode').attr('placeholder');
 		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .pesan').focus();
+		$('#whatsapp .Metode').focus();
 		return false;
 	} else {
-		if (!confirm("Kirim Ke WhatsApp?")) {
+		if (!confirm("Order Di WhatsApp?")) {
 			window.open("https://www.whatsapp.com/download/");
 		} else {
 			// Check Device (Mobile/Desktop)
@@ -342,10 +339,10 @@ function WhatsApp() {
 			var tujuan = $('#whatsapp .tujuan').val(),
 					via_url = location.href,
 					nama = $('#whatsapp .nama').val(),
-					alamat = $('#whatsapp .alamat').val(),
-                    nomor = $('#whatsapp .nomor').val(),
-					pesan = $('#whatsapp .pesan').val();
-			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order, saya *' + nama + '* %0A%0AAlamat:%20' + alamat +' %0A%0ANo.tlp:%20'+ nomor + ' %0A%0APaket:%20' + pesan + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
+					Jumlah = $('#whatsapp .Jumlah order / paket').val(),
+                    Email = $('#whatsapp .Email').val(),
+					Metode = $('#whatsapp .Metode').val();
+			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau Beli *' + Jumlah + '* %0A%0AMetode pembayaran :%20' + Metode +' %0A%0AMohon dibantu total dan cara pembayarannya kak');
 			var w = 960,
 					h = 540,
 					left = Number((screen.width / 2) - (w / 2)),
