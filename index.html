@@ -174,9 +174,7 @@ https://templatemo.com/tm-567-nomad-force
                             </div> 
                         </div>
                         
-                        
-                       
-           <style>
+                        <style>
       	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
@@ -285,13 +283,13 @@ https://templatemo.com/tm-567-nomad-force
 <input class="tujuan" type="hidden" value="081313994677" /> <!-- No. WhatsApp -->
 
 <label>Jumlah order / paket :
-<input class="Jumlah order / paket" type="Jumlah order / paket" placeholder="contoh : YouTube premium 1 Tahun." />
+<textarea class="pesan" placeholder="contoh: YouTube Premium 1 Tahun.."></textarea>
 </label>
-<label>Email Yang mau di upgrade prem :
-<input class="Email" type="Email" placeholder="contoh : google@gmail.com." />
+<label>Email Yang Mau Di Premiumin :
+<input class="alamat" type="alamat" placeholder="contoh : google@gmail.com." />
 </label>
 <label>Metode Pembayaran :
-<textarea class="Metode" placeholder="contoh: Gopay/shopeepay/dana.."></textarea>
+<input class="nomor" type="nomor" placeholder="contoh : Gopay/Shopeepay/Dana." />
 </label>
 <a class="submit">> Order Di WhatsApp</a>
 
@@ -315,20 +313,19 @@ function WhatsApp() {
 		alert('Silahkan tulis ' + ph);
 		$('#whatsapp .nama').focus();
 		return false;
-	} else if ($('#whatsapp .Jumlah order / paket').val() == '') { // Cek Jumlah order / paket
-		ph = $('#whatsapp .Jumlah order / paket').attr('placeholder');
+	} else if ($('#whatsapp .alamat').val() == '') { // Cek alamat
+		ph = $('#whatsapp .alamat').attr('placeholder');
 		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .Jumlah order / paket').focus();
+		$('#whatsapp .alamat').focus();
 		return false;
-	} else if ($('#whatsapp .Email').val() == '') { // Cek Email
-		ph = $('#whatsapp .Email').attr('placeholder');
+	} else if ($('#whatsapp .nomor').val() == '') { // Cek Nomor	ph = $('#whatsapp .nomor').attr('placeholder');
 		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .Email').focus();
+		$('#whatsapp .nomor').focus();
 		return false;
-	} else if ($('#whatsapp .Metode').val() == '') { // Cek Metode
-		ph = $('#whatsapp .Metode').attr('placeholder');
+	} else if ($('#whatsapp .pesan').val() == '') { // Cek Pesan
+		ph = $('#whatsapp .pesan').attr('placeholder');
 		alert('Silahkan tulis ' + ph);
-		$('#whatsapp .Metode').focus();
+		$('#whatsapp .pesan').focus();
 		return false;
 	} else {
 		if (!confirm("Order Di WhatsApp?")) {
@@ -343,10 +340,10 @@ function WhatsApp() {
 			var tujuan = $('#whatsapp .tujuan').val(),
 					via_url = location.href,
 					nama = $('#whatsapp .nama').val(),
-					Jumlah = $('#whatsapp .Jumlah order / paket').val(),
-                    Email = $('#whatsapp .Email').val(),
-					Metode = $('#whatsapp .Metode').val();
-			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau Beli *' + Jumlah + '* %0A%0AMetode pembayaran :%20' + Metode +' %0A%0AMohon dibantu total dan cara pembayarannya kak');
+					alamat = $('#whatsapp .alamat').val(),
+                    nomor = $('#whatsapp .nomor').val(),
+					pesan = $('#whatsapp .pesan').val();
+			$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin saya mau order*' + pesan + '* %0A%0AEmail :%20' + alamat +' %0A%0AMetode Pembayaran:%20'+ nomor + '%0A%0AMohon dibantu total dan cara pembayarannya kak');
 			var w = 960,
 					h = 540,
 					left = Number((screen.width / 2) - (w / 2)),
@@ -358,6 +355,8 @@ function WhatsApp() {
 	}
 }
 </script>
+                       
+           
                         </div>
 
                     </div>
